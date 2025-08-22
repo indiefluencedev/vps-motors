@@ -25,6 +25,8 @@ const App = () => {
 
     </Routes>
     <Hero/>
+    <Services/>
+    <Gallery/>
     </>
   )
 }

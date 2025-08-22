@@ -47,24 +47,8 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.5 }}
       >
-        <select className="border p-2 rounded-lg w-full md:w-auto">
-          <option>New & Used</option>
-          <option>New</option>
-          <option>Used</option>
-        </select>
-        <select className="border p-2 rounded-lg w-full md:w-auto">
-          <option>Renoult</option>
-          <option>sml</option>
-          <option>chevrolet</option>
-        </select>
-        <select className="border p-2 rounded-lg w-full md:w-auto">
-          <option>All Models</option>
-          <option>2022</option>
-          <option>2023</option>
-        </select>
-        <button className="px-6 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700">
-          🔍 Search
-        </button>
+        
+                
       </motion.div>
 
       {/* BRANDS STRIP */}
