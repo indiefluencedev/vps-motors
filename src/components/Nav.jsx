@@ -1,24 +1,3 @@
-// import React from 'react'
-// import { Link } from 'react-router-dom'
-
-// const Nav = () => {
-//   return (
-//     <>
-//     <div className="flex">
-//     <h1>VPS MOTORS</h1>
-//     <div className="flex">
-//         <Link to='/about'>About</Link>
-//         <Link to='/services'>Services</Link>
-//         <Link to='/gallery'>Gallery</Link>
-//         <Link to='/contact'>Contact</Link>
-
-//     </div>
-//         </div>
-//     </>
-//   )
-// }
-
-// export default Nav
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
