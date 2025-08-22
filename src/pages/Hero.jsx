@@ -8,8 +8,8 @@ import chevrolet from "../public/brands/chevrolet.png";
 // import "../styles/Hero.css'
 const Hero = () => {
 	return (
-		<section className="relative w-full bg-gray-50">
-			<div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-6 py-16">
+		<section className="relative h-screen w-full bg-gray-50">
+			<div className="container mx-auto h-[700px] flex flex-col md:flex-row items-center justify-between px-6 py-16">
 				{/* LEFT CONTENT */}
 				<motion.div
 					className="flex-2 text-center md:text-left"
@@ -65,19 +65,10 @@ const Hero = () => {
 					🔍 Search
 				</button>
 			</motion.div>
-      {/* FILTER BOX */}
-      <motion.div
-        className="absolute left-1/2 transform -translate-x-1/2 bottom-[-40px] bg-white shadow-lg rounded-xl flex flex-col md:flex-row items-center gap-4 px-6 py-4 w-[90%] md:w-[70%]"
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 0.5 }}
-      >
-        
-                
-      </motion.div>
+      
 
 			{/* BRANDS STRIP */}
-			<div className="mt-28 py-8 bg-gray-100">
+			<div className=" py-8  bg-gray-100">
 				<div className="flex justify-center gap-8 flex-wrap opacity-70">
 					<img src={chevrolet} alt="Honda" className="h-25 w-40 mr-2" />
 					<img src={sml} alt="Toyota" className="h-25 w-40" />
@@ -90,3 +81,12 @@ const Hero = () => {
 };
 
 export default Hero;
+// import React from 'react'
+
+// const Hero = () => {
+//   return (
+// 	<div>Hero</div>
+//   )
+// }
+
+// export default Hero

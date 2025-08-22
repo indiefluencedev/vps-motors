@@ -77,6 +77,7 @@
 // export default Nav;
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -87,9 +88,9 @@ export default function Nav() {
         
         {/* Left Menu */}
         <div className="hidden md:flex space-x-6 text-gray-700 font-medium">
-          <a href="#about" className="hover:text-red-600">About</a>
-          <a href="#services" className="hover:text-red-600">Services</a>
-          <a href="#gallery" className="hover:text-red-600">Gallery</a>
+          <Link to='/'className="hover:text-red-600"> Home</Link>
+          <Link to='/gallery'className="hover:text-red-600"> Gallery</Link>
+
         </div>
 
         {/* Logo Center */}
@@ -99,9 +100,8 @@ export default function Nav() {
 
         {/* Right Menu */}
         <div className="hidden md:flex space-x-6 text-gray-700 font-medium">
-          <a href="#brands" className="hover:text-red-600">Brands</a>
-          <a href="#contact" className="hover:text-red-600">Contact</a>
-          <a href="#location" className="hover:text-red-600">Location</a>
+        <Link to='/services'className="hover:text-red-600"> Services</Link>
+        <Link to='/contact'className="hover:text-red-600"> Contact</Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -116,12 +116,10 @@ export default function Nav() {
       {/* Mobile Dropdown */}
       {isOpen && (
         <div className="md:hidden bg-white px-6 py-4 space-y-4 text-gray-700 font-medium shadow">
-          <a href="#about" className="block hover:text-red-600">About</a>
-          <a href="#services" className="block hover:text-red-600">Services</a>
-          <a href="#gallery" className="block hover:text-red-600">Gallery</a>
-          <a href="#brands" className="block hover:text-red-600">Brands</a>
-          <a href="#contact" className="block hover:text-red-600">Contact</a>
-          <a href="#location" className="block hover:text-red-600">Location</a>
+                  <Link to='/about'className="block hover:text-red-600"> About</Link>
+                  <Link to='/services'className="block hover:text-red-600"> Services</Link>
+                  <Link to='/gallery'className="block hover:text-red-600"> Gallery</Link>
+                  <Link to='/services'className="block hover:text-red-600"> Contact</Link>
         </div>
       )}
     </nav>

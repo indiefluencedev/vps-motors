@@ -9,10 +9,10 @@
 		"strictFunctionTypes": true
 	},
 	"exclude": ["node_modules", "**/node_modules/*"],
-	"compilerOptions": {
-		"baseUrl": ".",
-		"paths": {
-			"@/*": ["./src/*"]
-		}
-	}
+	// "compilerOptions": {
+	// 	"baseUrl": ".",
+	// 	"paths": {
+	// 		"@/*": ["./src/*"]
+	// 	}
+	// }
 }
