@@ -118,3 +118,23 @@
     @apply bg-background text-foreground;
   }
 }
+
+.cursor{
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 9999;
+  background-color: black;
+  pointer-events: none;
+}
+.curfollow{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 9999;
+  background-color: transparent;
+  border: 1px solid black;
+  pointer-events: none;
+}

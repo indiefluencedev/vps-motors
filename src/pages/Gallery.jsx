@@ -9,12 +9,12 @@ import f from '../public/gallery/f.jpg'
 
 const Gallery = () => {
   const galleryImages = [
-    { src: {a}, alt: "Family at dealership" },
-    { src: {b}, alt: "Car consultation" },
-    { src: {c}, alt: "Car wheel detail" },
-    { src: {d}, alt: "Sports car rear" },
-    { src: {e}, alt: "Silver SUV" },
-    { src: {f}, alt: "Blue sedan" },
+    { src: a, alt: "Family at dealership" },
+    { src: b, alt: "Car consultation" },
+    { src: c, alt: "Car wheel detail" },
+    { src: d, alt: "Sports car rear" },
+    { src: e, alt: "Silver SUV" },
+    { src: f, alt: "Blue sedan" },
   ]
   return (
     <>
@@ -32,7 +32,7 @@ const Gallery = () => {
             <div key={index} className="group cursor-pointer">
               <div className="overflow-hidden rounded-lg">
                 <img
-                  src={image.src || "/placeholder.svg"}
+                  src={image.src || {a}}
                   alt={image.alt}
                   className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
                 />
