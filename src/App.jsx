@@ -12,12 +12,14 @@ import { Route,Routes } from 'react-router-dom'
 import Location from './components/Location'
 import Footer from './components/Footer'
 import Cursor from './components/Cursor'
+import ScrollToTop from './components/global-components/ScrollToTop'
 
 
 const App = () => {
   return (
     <>
     <Cursor/>
+    <ScrollToTop/>
     {/* <h1 className='text-black'>Radhe Radhe</h1> */}
     <Nav/>
     {/* <Social/> */}
@@ -35,9 +37,7 @@ const App = () => {
     </Routes>
     {/* <Hero/> */}
     {/* <Services/> */}
-    <About/>
-    <Gallery/>
-    <Contact/>
+  
     <Footer/>
     </>
   )

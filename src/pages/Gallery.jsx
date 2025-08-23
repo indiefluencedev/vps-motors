@@ -23,9 +23,20 @@ const Gallery = () => {
   
   <section id="gallery" className="py-20 bg-card">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-card-foreground mb-4">Our Gallery</h2>
-        </div>
+         {/* Heading */}
+      <div className="flex items-center justify-center space-x-4 my-8">
+  {/* Left Line */}
+  <div className="w-12 md:w-20 h-[2px] bg-gray-400"></div>
+
+  {/* Heading */}
+  <h2 className="text-3xl md:text-3xl font-bold text-gray-900">
+    Gallery
+  </h2>
+
+  {/* Right Line */}
+  <div className="w-12 md:w-20 h-[2px] bg-gray-400"></div>
+</div>
+
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {galleryImages.map((image, index) => (

@@ -94,9 +94,11 @@ export default function Nav() {
         </div>
 
         {/* Logo Center */}
+        <Link to='/'>
         <div className="text-xl font-bold text-gray-900">
           VPS <span className="text-red-600">MOTORS</span>
         </div>
+        </Link>
 
         {/* Right Menu */}
         <div className="hidden md:flex space-x-6 text-gray-700 font-medium">
