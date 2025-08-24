@@ -24,7 +24,7 @@ const Gallery = () => {
   <section id="gallery" className="py-20 bg-card">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
          {/* Heading */}
-      <div className="flex items-center justify-center space-x-4 my-8">
+      <div className="flex items-center justify-center space-x-4 mb-9">
   {/* Left Line */}
   <div className="w-12 md:w-20 h-[2px] bg-gray-400"></div>
 

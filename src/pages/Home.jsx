@@ -1,8 +1,11 @@
 import React from 'react'
-import Hero from '../components/Hero'
+import Hero from './Hero'
 import Services from './Services'
 import About from './About'
 import Gallery from './Gallery'
+import Nav from '@/components/global-components/Nav'
+import { style } from 'framer-motion/client'
+import Testimonial from '@/components/Testimonial'
 
 
 const Home = () => {
@@ -12,6 +15,7 @@ const Home = () => {
         <Services/>
         <About/>
         <Gallery/>
+        <Testimonial/>
     </div>
   )
 }

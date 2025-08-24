@@ -1,10 +1,14 @@
 
 import React from "react";
 import { Car, Wallet, Smartphone } from "lucide-react";
+import { useLocation } from "react-router-dom";
+
 
 const Services = () => {
+  const location=useLocation();
+const paddingclass= location.pathname==='/' ? 'py-16' : 'py-9'
   return (
-    <section id="services" className="py-16 bg-gray-50">
+    <section id="services" className={` ${paddingclass} mt-9 bg-white`}>
       <div className="max-w-7xl mb-7 mx-auto px-6 text-center">
       {/* Heading */}
       <div className="flex items-center justify-center space-x-4 my-8">

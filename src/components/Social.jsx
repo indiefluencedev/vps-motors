@@ -1,6 +1,6 @@
 import React from 'react'
 import FlipLink from './ui/text-effect-flipper'
-import Imageripple from './ui/image-ripple'
+// import Imageripple from './ui/image-ripple'
 
 
 const Social = () => {

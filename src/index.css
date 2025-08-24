@@ -12,7 +12,7 @@
   --color-foreground: var(--foreground);
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
-  --color-popover: var(--popover);
+  --color-zz  popover: var(--popover);
   --color-popover-foreground: var(--popover-foreground);
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
@@ -138,3 +138,32 @@
   border: 1px solid black;
   pointer-events: none;
 }
+
+
+
+
+.swiper-pagination {
+  width: auto !important; /* Allow the container to take only the necessary width */
+  text-align: right !important;
+  right: 20px;;
+  color: white !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: white !important; /* Set inactive bullets to white */
+}
+
+/* In your index.css or a dedicated CSS file */
+/* .swiper-button-next {
+  right: 10px !important; /* Adjust as needed */
+  /* top: 530px !important; /* Adjust as needed */
+  /* left: auto !important; Override default left positioning
+  color: white !important; */
+  /* font-size: 10px !important; */   
+/* } */
+
+/* .swiper-button-prev { */
+  /* right: 50px !important; Adjust as needed to place it next to the "next" button */
+  /* top: 530px !important; Align with the "next" button */
+  /* left: auto !important; Override default left positioning */
+/* } */ 

@@ -1,7 +1,9 @@
 import React from 'react'
 import { Button } from "@/components/ui/button"
 import { CheckCircle } from "lucide-react"
-import car from '../public/1.webp'
+import car from '../public/about.webp'
+// import {ImageRipple} from '../components/ui/image-ripple' 
+// import {ImageCursorTrail} from '../components/ui/image-ripple'
 
 const About = () => {
   const features = ["Expert guidance at every step", "Competitive financing options", "Comprehensive warranty coverage"]
@@ -12,11 +14,13 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Image */}
           <div className="relative">
-            <img
+      <img
+            
               src={car}
               alt="Red sports car in showroom"
               className="w-full h-auto object-cover rounded-lg"
             />
+          
             <div className="absolute top-4 left-4 bg-accent text-accent-foreground px-4 py-2 rounded-lg font-semibold">
               Most Popular Product
             </div>
@@ -43,7 +47,7 @@ const About = () => {
               ))}
             </div>
 
-            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">Learn More</Button>
+            <Button className="bg-primary hover:bg-primary/90 hover:scale-105 text-primary-foreground">Learn More</Button>
           </div>
         </div>
       </div>

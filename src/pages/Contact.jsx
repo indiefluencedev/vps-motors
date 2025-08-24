@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import { useState } from "react"
-import Location from './Location'
+import Location from '../components/Location'
 import { Mail, Phone, MapPin, Clock, Send } from "lucide-react"
 
 
