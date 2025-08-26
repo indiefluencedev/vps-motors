@@ -7,6 +7,8 @@ import About from './pages/About'
 import Services from './pages/Services'
 import Contact from './pages/Contact'
 import Gallery from './pages/Gallery'
+import Passenger from './pages/Passenger'
+// import Commercial from './pages/Commercial'
 import Nav from './components/global-components/Nav'
 import { Route,Routes } from 'react-router-dom'
 import Location from './components/Location'
@@ -14,11 +16,14 @@ import Footer from './components/global-components/Footer'
 import Cursor from './components/global-components/Cursor'
 import ScrollToTop from './components/global-components/ScrollToTop'
 import Try from './components/Try'
+import Commercial from './pages/Commercial'
+
 
 
 const App = () => {
   return (
     <>
+    
     <Cursor/>
     <ScrollToTop/>
     {/* <h1 className='text-black'>Radhe Radhe</h1> */}
@@ -34,6 +39,10 @@ const App = () => {
       <Route path='contact' element={<Contact/>}/>
       <Route path='gallery' element={<Gallery/>}/>
       <Route path='loc' element={<Location/>}/>
+      <Route path='passenger' element={<Passenger/>}/>
+      <Route path='commercial' element={<Commercial/>}/>
+
+    
 
 
     </Routes>

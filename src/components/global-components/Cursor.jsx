@@ -46,3 +46,50 @@ const Cursor = () => {
 };
 
 export default Cursor;
+
+// "use client";
+// import { motion } from "framer-motion";
+// import { useState, useEffect } from "react";
+
+// export default function Cursor() {
+//   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+//   const [hovered, setHovered] = useState(false);
+
+//   useEffect(() => {
+//     const mouseMove = (e) => {
+//       setMousePosition({ x: e.clientX, y: e.clientY });
+//     };
+//     window.addEventListener("mousemove", mouseMove);
+
+//     // Detect hover on interactive elements
+//     const addHover = () => setHovered(true);
+//     const removeHover = () => setHovered(false);
+
+//     const hoverables = document.querySelectorAll("a, button, img, .hover-target");
+//     hoverables.forEach((el) => {
+//       el.addEventListener("mouseenter", addHover);
+//       el.addEventListener("mouseleave", removeHover);
+//     });
+
+//     return () => {
+//       window.removeEventListener("mousemove", mouseMove);
+//       hoverables.forEach((el) => {
+//         el.removeEventListener("mouseenter", addHover);
+//         el.removeEventListener("mouseleave", removeHover);
+//       });
+//     };
+//   }, []);
+
+//   return (
+//     <motion.div
+//       className="fixed top-0 left-0 w-6 h-6 rounded-full bg-blue-500 pointer-events-none z-[9999] mix-blend-difference"
+//       animate={{
+//         x: mousePosition.x - 12,
+//         y: mousePosition.y - 12,
+//         scale: hovered ? 2 : 1,
+//         backgroundColor: hovered ? "#facc15" : "#3b82f6", // yellow on hover
+//       }}
+//       transition={{ type: "spring", stiffness: 200, damping: 20 }}
+//     />
+//   );
+// }

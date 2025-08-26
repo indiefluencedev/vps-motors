@@ -6,6 +6,7 @@ import Gallery from './Gallery'
 import Nav from '@/components/global-components/Nav'
 import { style } from 'framer-motion/client'
 import Testimonial from '@/components/Testimonial'
+import Social from '@/components/Social'
 
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
         <About/>
         <Gallery/>
         <Testimonial/>
+        <Social/>
     </div>
   )
 }
