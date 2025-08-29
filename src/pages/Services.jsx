@@ -31,24 +31,33 @@ const paddingclass= location.pathname==='/' ? 'py-16' : 'py-9'
 
         {/* Services Cards */}
         <div className="grid gap-8 mt-12 sm:grid-cols-2 md:grid-cols-3 sm:justify-center">
-          <div className="bg-white rounded-2xl shadow-md p-8 hover:shadow-xl transition">
-            <Car className="text-red-500 w-14 h-14 mx-auto" />
+          {/* Card 1 */}
+          <div className="bg-white rounded-2xl shadow-md p-8 hover:shadow-xl transition group"> {/* Added group class */}
+            <div className="transition-transform duration-300 transform group-hover:translate-y-2"> {/* Added div and classes */}
+              <Car className="text-red-500 w-14 h-14 mx-auto" />
+            </div>
             <h3 className="mt-4 font-semibold text-lg">Top Buy & Sell Car</h3>
             <p className="text-gray-600 mt-2 text-sm">
               We Provide Many Of The Best Services For You And You Will Get The Best Benefits Here
             </p>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-md p-8 hover:shadow-xl transition">
-            <Wallet className="text-red-500 w-14 h-14 mx-auto" />
+          {/* Card 2 */}
+          <div className="bg-white rounded-2xl shadow-md p-8 hover:shadow-xl transition group"> {/* Added group class */}
+            <div className="transition-transform duration-300 transform group-hover:translate-y-2"> {/* Added div and classes */}
+              <Wallet className="text-red-500 w-14 h-14 mx-auto" />
+            </div>
             <h3 className="mt-4 font-semibold text-lg">Easy Payment</h3>
             <p className="text-gray-600 mt-2 text-sm">
               We Provide Many Of The Best Services For You And You Will Get The Best Benefits Here
             </p>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-md p-8 hover:shadow-xl transition sm:col-span-2 md:col-span-1 sm:mx-auto">
-            <Smartphone className="text-red-500 w-14 h-14 mx-auto" />
+          {/* Card 3 */}
+          <div className="bg-white rounded-2xl shadow-md p-8 hover:shadow-xl transition sm:col-span-2 md:col-span-1 sm:mx-auto group"> {/* Added group class */}
+            <div className="transition-transform duration-300 transform group-hover:translate-y-2"> {/* Added div and classes */}
+              <Smartphone className="text-red-500 w-14 h-14 mx-auto" />
+            </div>
             <h3 className="mt-4 font-semibold text-lg">Easy To Use</h3>
             <p className="text-gray-600 mt-2 text-sm">
               We Provide Many Of The Best Services For You And You Will Get The Best Benefits Here

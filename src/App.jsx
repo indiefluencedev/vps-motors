@@ -15,7 +15,6 @@ import Location from './components/Location'
 import Footer from './components/global-components/Footer'
 import Cursor from './components/global-components/Cursor'
 import ScrollToTop from './components/global-components/ScrollToTop'
-import Try from './components/Try'
 import Commercial from './pages/Commercial'
 
 
