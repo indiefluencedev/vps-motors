@@ -324,7 +324,7 @@ export default function Gallery() {
               <img
                 src={img.src}
                 alt={img.alt}
-                className="block w-full h-64 object-cover object-center rounded-lg transform transition-transform duration-300 hover:scale-105"
+                className="block w-full h-80 object-cover object-center rounded-lg transform transition-transform duration-300 hover:scale-105"
               />
             </div>
           ))}
