@@ -1,12 +1,22 @@
 // import React from "react";
 import React, { useState } from "react";
 
-import comm from '../public/hero3.avif'
-import a from '../public/comm2.avif'
-import b from '../public/commercial/2.webp'
-import c from '../public/gallery/c.jpg'
-import d from '../public/gallery/d.jpg'
-import Gallery from "./Gallery";
+import comm from '../public/commercial/commbg.avif'
+import a from '../public/commercial/1.webp'
+import b from '../public/commercial/2.png'
+import c from '../public/commercial/3.webp'
+import d from '../public/commercial/4.webp'
+import e from '../public/commercial/5.png'
+import f from '../public/commercial/6.png'
+import g from '../public/commercial/7.png'
+import h from '../public/commercial/8.png'
+import i from '../public/commercial/9.jpg'
+
+
+
+
+
+
 
 
 
@@ -17,8 +27,12 @@ const Commercial = () => {
     { src: b, alt: "Car wheel detail" },
     { src: c, alt: "Sports car rear" },
     { src: d, alt: "Silver SUV" },
-    // { src: e, alt: "Blue sedan" },
-    // { src: f, alt: "Luxury car" },
+    { src: e, alt: "Blue sedan" },
+    { src: f, alt: "Luxury car" },
+    { src: g, alt: "Luxury car" },
+    { src: h, alt: "Luxury car" },
+    { src: i, alt: "Luxury car" },
+
   ];
 
   return (
@@ -80,7 +94,7 @@ const Commercial = () => {
               <img
                 src={img.src}
                 alt={img.alt}
-                className="block w-full h-80 object-cover object-center rounded-lg transform transition-transform duration-300 hover:scale-105"
+                className="block w-full h-80 object-fill object-center rounded-lg transform transition-transform duration-300 hover:scale-105"
               />
             </div>
           ))}

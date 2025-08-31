@@ -123,7 +123,7 @@ import { useNavigate } from "react-router-dom"; // ✅ import navigate hook
 
 import heroBg from "../public/hero.webp";
 import cardImg1 from "../public/about.webp";
-import cardImg2 from "../public/cars/car1.jpeg";
+import cardImg2 from "../public/cars/commm.jpg";
 
 const Hero = () => {
   const navigate = useNavigate(); // ✅ initialize navigate
@@ -158,54 +158,61 @@ const Hero = () => {
       "
       >
         {/* CARD 1 */}
-        <div
+         {/* CARD 1 */}
+         <div
           className="w-full md:w-1/2 h-58 backdrop-blur-md bg-white/30 shadow-xl flex flex-col justify-between p-6 border border-white/40
             transition-transform duration-300 ease-in-out
-            hover:scale-105 hover:shadow-2xl cursor-pointer rounded-3xl items-center"
+            hover:scale-105 hover:shadow-2xl cursor-pointer rounded-3xl items-center relative" // Added 'relative' and 'cursor-pointer'
           style={{
             backgroundImage: `url('${cardImg1}')`,
             backgroundSize: "cover",
             backgroundPositionY: "80%",
             boxShadow: "0px 8px 32px 0px rgba(31, 38, 135, 0.37)",
           }}
+          onClick={() => navigate("/passenger")} // Make the entire card clickable
         >
-          <div className="w-full h-full flex flex-col items-center justify-between">
-            <span className="text-white font-semibold text-xl drop-shadow mb-3 text-center">
+          {/* Added blur overlay at the bottom */}
+          <div className="absolute inset-x-0 bottom-0 h-1/3 bg-black opacity-40 backdrop-filter backdrop-blur-sm rounded-b-3xl flex flex-col justify-center items-center p-4"> {/* Added flex and p-4 */}
+            {/* Text on the blur */}
+            <span className="text-white font-semibold text-xl drop-shadow text-center">
               Passenger Vehicles
             </span>
-            <button
-              className="px-6 py-2 rounded-xl bg-red-600 text-white font-semibold hover:scale-105 hover:bg-red-800 transition shadow-lg"
-              onClick={() => navigate("/passenger")} // ✅ go to Passenger.jsx
-            >
-              See Details
-            </button>
+           
           </div>
+
+          {/* This div can now be removed or repurposed if needed */}
+          {/* <div className="w-full h-full flex flex-col items-center justify-between relative z-10">
+            </div> */}
+        </div>
+        {/* CARD 2*/}
+        
+      {/* CARD 2*/}
+      <div
+        className="w-full md:w-1/2 h-58 backdrop-blur-md bg-white/30 shadow-xl flex flex-col justify-between p-6 border border-white/40
+            transition-transform duration-300 ease-in-out
+            hover:scale-105 hover:shadow-2xl cursor-pointer rounded-3xl items-center relative" // Added 'relative' and 'cursor-pointer'
+        style={{
+          backgroundImage: `url('${cardImg2}')`,
+          backgroundSize: "cover",
+          backgroundPositionY: "50%",
+          boxShadow: "0px 8px 32px 0px rgba(31, 38, 135, 0.37)",
+        }}
+        onClick={() => navigate("/commercial")} // Make the entire card clickable
+      >
+        {/* Added blur overlay at the bottom */}
+        <div className="absolute inset-x-0 bottom-0 h-1/3 bg-black opacity-40 backdrop-filter backdrop-blur-sm rounded-b-3xl flex flex-col justify-center items-center p-4"> {/* Added flex and p-4 */}
+            {/* Text on the blur */}
+            <span className="text-white font-semibold text-xl drop-shadow text-center">
+                Commercial Vehicles
+            </span>
+         
         </div>
 
-        {/* CARD 2*/}
-        <div
-          className="w-full md:w-1/2 h-58 backdrop-blur-md bg-white/30 shadow-xl flex flex-col justify-between p-6 border border-white/40
-            transition-transform duration-300 ease-in-out
-            hover:scale-105 hover:shadow-2xl cursor-pointer rounded-3xl items-center"
-          style={{
-            backgroundImage: `url('${cardImg2}')`,
-            backgroundSize: "cover",
-            backgroundPositionY: "80%",
-            boxShadow: "0px 8px 32px 0px rgba(31, 38, 135, 0.37)",
-          }}
-        >
-          <div className="w-full h-full flex flex-col items-center justify-between">
-            <span className="text-white font-semibold text-xl drop-shadow mb-3 text-center">
-              Commercial Vehicles
-            </span>
-            <button
-              className="px-6 py-2 rounded-xl bg-red-600 text-white font-semibold hover:bg-red-800 hover:scale-105 transition shadow-lg"
-              onClick={() => navigate("/commercial")} // ✅ go to Commercial.jsx
-            >
-              See Details
-            </button>
-          </div>
-        </div>
+        {/* This div can now be removed or repurposed if needed */}
+        {/* <div className="w-full h-full flex flex-col items-center justify-between relative z-10">
+          </div> */}
+      </div>
+
       </div>
     </section>
   );

@@ -284,10 +284,10 @@
 import React, { useState } from "react";
 import a from "../public/gallery/a.jpg";
 import b from "../public/gallery/b.jpg";
-import c from "../public/gallery/c.jpg";
-import d from "../public/gallery/d.jpg";
+import c from "../public/gallery/c.webp";
+import d from "../public/commercial/7.png";
 import e from "../public/gallery/e.jpg";
-import f from "../public/gallery/f.jpg";
+import f from "../public/commercial/8.png";
 
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -321,11 +321,13 @@ export default function Gallery() {
               className="p-1 md:p-2 w-full sm:w-1/2 lg:w-1/3 cursor-pointer"
               onClick={() => setSelectedImage(img.src)}
             >
-              <img
-                src={img.src}
-                alt={img.alt}
-                className="block w-full h-80 object-cover object-center rounded-lg transform transition-transform duration-300 hover:scale-105"
-              />
+         <img
+  src={img.src}
+  alt={img.alt}
+  className="block w-full aspect-[4/3] object-fill object-center rounded-lg transform transition-transform duration-300 hover:scale-105"
+/>
+
+
             </div>
           ))}
         </div>
